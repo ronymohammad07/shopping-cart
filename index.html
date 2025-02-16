@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid-Box</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="logo">Mid-Box</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span class="material-icons">menu</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart" onclick="showCart(); return false;">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2 class="h2">Our Products</h2>
+        <div class="product-list" id="product-list">
+            <!-- Products will be loaded here dynamically -->
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart">
+        <div class="cart-header">
+            <button class="close-cart" onclick="hideCart()">×</button>
+            <h2>Shopping Cart</h2>
+        </div>
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+        <div class="cart-summary">
+            <p>Subtotal: $<span id="subtotal">0.00</span></p>
+            <input type="text" id="promoCode" placeholder="Enter promo code">
+            <button onclick="applyPromo()">Apply</button>
+            <p class="error" id="error-msg"></p>
+            <p class="success" id="success-msg"></p>
+            <p>Discount: $<span id="discount">0.00</span></p>
+            <p><strong>Total: $<span id="total">0.00</span></strong></p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </section>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay" onclick="hideCart()"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid-Box</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- <header>
+        <h1>ShopEase</h1>
+    </header> -->
+    <!-- <nav class="nav">
+        <div class="logo">Mid-Box</div>
+        <ul class="nav-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart" onclick="showCart(); return false;">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+    <section id="products" class="products">
+        <h2 class="h2">Our Products</h2>
+        <div class="product-list" id="product-list">
+            <!-- Products will be loaded here dynamically -->
+        <!-- </div>
+    </section>
+    <section id="cart" class="cart">
+        <div class="cart-header">
+            <button class="close-cart" onclick="hideCart()">×</button>
+            <h2>Shopping Cart</h2>
+        </div>
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+        <div class="cart-summary">
+            <p>Subtotal: $<span id="subtotal">0.00</span></p>
+            <input type="text" id="promoCode" placeholder="Enter promo code">
+            <button onclick="applyPromo()">Apply</button>
+            <p class="error" id="error-msg"></p>
+            <p class="success" id="success-msg"></p>
+            <p>Discount: $<span id="discount">0.00</span></p>
+            <p><strong>Total: $<span id="total">0.00</span></strong></p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </section>
+    <div id="overlay" class="overlay" onclick="hideCart()"></div>
+</body>
+</html> --> --> -->
